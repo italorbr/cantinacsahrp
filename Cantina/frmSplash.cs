@@ -16,5 +16,23 @@ namespace Cantina
         {
             InitializeComponent();
         }
+
+        private void tmrSplash_Tick(object sender, EventArgs e)
+        {
+           
+            if (pgbSplah.Maximum < 100)
+            {
+                pgbSplah.Value = pgbSplah.Value + 1;
+                lblValor.Text = pgbSplah.Value.ToString();                
+            }
+            else
+            {
+                frmLogin abrir = new frmLogin();
+                abrir.Show();
+                this.Hide();
+                tmrSplash.Enabled = false;
+            }
+
+        }
     }
 }

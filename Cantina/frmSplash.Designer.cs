@@ -79,7 +79,7 @@ namespace Cantina
             // tmrSplash
             // 
             this.tmrSplash.Enabled = true;
-            this.tmrSplash.Interval = 1000;
+            this.tmrSplash.Interval = 2000;
             this.tmrSplash.Tick += new System.EventHandler(this.tmrSplash_Tick);
             // 
             // frmSplash
@@ -97,6 +97,7 @@ namespace Cantina
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cantina - Splash";
+            this.Load += new System.EventHandler(this.frmSplash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctSplash)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

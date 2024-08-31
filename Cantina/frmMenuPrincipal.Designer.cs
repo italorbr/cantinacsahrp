@@ -45,11 +45,13 @@ namespace Cantina
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
-            this.btnVoltar.Location = new System.Drawing.Point(627, 405);
+            this.btnVoltar.Location = new System.Drawing.Point(623, 398);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(149, 38);
+            this.btnVoltar.Size = new System.Drawing.Size(150, 51);
             this.btnVoltar.TabIndex = 0;
             this.btnVoltar.Text = "&Voltar";
+            this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
@@ -62,6 +64,8 @@ namespace Cantina
             this.btnFuncionarios.Size = new System.Drawing.Size(150, 180);
             this.btnFuncionarios.TabIndex = 1;
             this.btnFuncionarios.Text = "&Funcionários";
+            this.btnFuncionarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnFuncionarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnFuncionarios.UseVisualStyleBackColor = true;
             // 
             // btnClientes
@@ -73,6 +77,8 @@ namespace Cantina
             this.btnClientes.Size = new System.Drawing.Size(150, 180);
             this.btnClientes.TabIndex = 2;
             this.btnClientes.Text = "&Clientes";
+            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnClientes.UseVisualStyleBackColor = true;
             // 
             // btnProdutos
@@ -84,6 +90,8 @@ namespace Cantina
             this.btnProdutos.Size = new System.Drawing.Size(150, 180);
             this.btnProdutos.TabIndex = 3;
             this.btnProdutos.Text = "&Produtos";
+            this.btnProdutos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnProdutos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProdutos.UseVisualStyleBackColor = true;
             // 
             // btnFornecedores
@@ -95,6 +103,8 @@ namespace Cantina
             this.btnFornecedores.Size = new System.Drawing.Size(150, 180);
             this.btnFornecedores.TabIndex = 4;
             this.btnFornecedores.Text = "&Fornecedores";
+            this.btnFornecedores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnFornecedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnFornecedores.UseVisualStyleBackColor = true;
             // 
             // btnConfiguracoes
@@ -106,6 +116,8 @@ namespace Cantina
             this.btnConfiguracoes.Size = new System.Drawing.Size(150, 180);
             this.btnConfiguracoes.TabIndex = 8;
             this.btnConfiguracoes.Text = "&Configurações";
+            this.btnConfiguracoes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnConfiguracoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnConfiguracoes.UseVisualStyleBackColor = true;
             // 
             // btnRelatorios
@@ -117,6 +129,8 @@ namespace Cantina
             this.btnRelatorios.Size = new System.Drawing.Size(150, 180);
             this.btnRelatorios.TabIndex = 7;
             this.btnRelatorios.Text = "&Relatórios";
+            this.btnRelatorios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnRelatorios.UseVisualStyleBackColor = true;
             // 
             // btnVendas
@@ -128,6 +142,8 @@ namespace Cantina
             this.btnVendas.Size = new System.Drawing.Size(150, 180);
             this.btnVendas.TabIndex = 6;
             this.btnVendas.Text = "&Vendas";
+            this.btnVendas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnVendas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnVendas.UseVisualStyleBackColor = true;
             // 
             // btnUsuarios
@@ -139,6 +155,8 @@ namespace Cantina
             this.btnUsuarios.Size = new System.Drawing.Size(150, 180);
             this.btnUsuarios.TabIndex = 5;
             this.btnUsuarios.Text = "&Usuários";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnUsuarios.UseVisualStyleBackColor = true;
             // 
             // frmMenuPrincipal

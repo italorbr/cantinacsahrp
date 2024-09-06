@@ -26,6 +26,8 @@ namespace Cantina
         public frmFuncionarios()
         {
             InitializeComponent();
+            desabilitarCampos();
+            //executando o metodo para desabilitar campos
         }
 
         private void frmFuncionarios_Load(object sender, EventArgs e)
@@ -49,5 +51,63 @@ namespace Cantina
         {
 
         }
+
+        // metodo para desabilitar campos
+        public void desabilitarCampos()
+        {
+            txtCodigo.Enabled = false;
+            txtBairro.Enabled = false;
+            txtCidade.Enabled = false;
+            txtEmail.Enabled = false;
+            txtEndereco.Enabled = false;
+            txtNome.Enabled = false;
+            txtNumero.Enabled = false;
+            mkbCEP.Enabled = false;
+            mkbCPF.Enabled = false;
+            mkbTelefone.Enabled = false;
+            cbbEstado.Enabled = false;
+            btnAlterar.Enabled = false;
+            btnCadastrar.Enabled = false;
+            btnExcluir.Enabled = false;
+            btnLimpar.Enabled = false;
+         
+        }
+
+        // metodo para desabilitar campos
+        public void habilitarCampos()
+        {
+            txtCodigo.Enabled = true;
+            txtBairro.Enabled = true;
+            txtCidade.Enabled = true;
+            txtEmail.Enabled = true;
+            txtEndereco.Enabled = true;
+            txtNome.Enabled = true;
+            txtNumero.Enabled = true;
+            mkbCEP.Enabled = true;
+            mkbCPF.Enabled = true;
+            mkbTelefone.Enabled = true;
+            cbbEstado.Enabled = true;
+            btnAlterar.Enabled = false;
+            btnCadastrar.Enabled = true;
+            btnExcluir.Enabled = false;
+            btnLimpar.Enabled = true;
+            btnNovo.Enabled = false;
+            txtNome.Focus();
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal abrir = new frmMenuPrincipal();
+            abrir.Show();
+            this.Hide();
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            habilitarCampos();
+        }
+
+        
     }
 }

@@ -41,3 +41,4 @@ C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\bin\Debug\Newtonsof
 C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\obj\Debug\Cantina.csproj.CopyComplete
+C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\obj\Debug\Cantina.frmPesquisar.resources

@@ -96,6 +96,23 @@ namespace Cantina
 
         }
 
+        // metodo para limpar campos
+        public void limparCampos()
+        {
+            txtCodigo.Clear();
+            txtBairro.Clear();
+            txtCidade.Clear();
+            txtEmail.Clear();
+            txtEndereco.Clear();
+            txtNome.Clear();
+            txtNumero.Clear();
+            mkbCEP.Text = "";
+            mkbCPF.Text = "";
+            mkbTelefone.Text = "";
+            cbbEstado.Text = "";
+
+        }
+
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             frmMenuPrincipal abrir = new frmMenuPrincipal();
@@ -125,7 +142,18 @@ namespace Cantina
                 MessageBox.Show("Por favor, preencha todos os campos.", "Sistema",MessageBoxButtons.OK,
                     MessageBoxIcon.Error,MessageBoxDefaultButton.Button1);
             }
+            else
+            {
+                MessageBox.Show("Cadastrado com sucesso!.", "Sistema", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+                desabilitarCampos();
+            }
             
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limparCampos();
         }
     }
 }

@@ -108,6 +108,24 @@ namespace Cantina
             habilitarCampos();
         }
 
-        
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            //verificando se os campos estão preenchidos
+            if (txtNome.Text.Equals("") || txtEmail.Text.Equals("")
+                || mkbCPF.Text.Equals("   .   .   -")
+                || mkbCEP.Text.Equals("     -")
+                || mkbTelefone.Text.Equals("     -")
+                || txtEndereco.Text.Equals("")
+                || txtNumero.Text.Equals("")
+                || txtBairro.Text.Equals("")
+                || txtCidade.Text.Equals("")
+                || cbbEstado.Text.Equals(""))
+            {
+                //message box com o simbolo do x vermelho dentro e o botao 
+                MessageBox.Show("Por favor, preencha todos os campos.", "Sistema",MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,MessageBoxDefaultButton.Button1);
+            }
+            
+        }
     }
 }

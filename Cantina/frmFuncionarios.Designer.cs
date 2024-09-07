@@ -323,6 +323,7 @@ namespace Cantina
             this.mkbCEP.Name = "mkbCEP";
             this.mkbCEP.Size = new System.Drawing.Size(96, 26);
             this.mkbCEP.TabIndex = 7;
+            this.mkbCEP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mkbCEP_KeyDown);
             // 
             // lblCEP
             // 

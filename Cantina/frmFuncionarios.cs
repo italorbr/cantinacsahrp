@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using MosaicoSolutions.ViaCep;
 
 namespace Cantina
 {
@@ -110,6 +111,34 @@ namespace Cantina
             mkbCPF.Text = "";
             mkbTelefone.Text = "";
             cbbEstado.Text = "";
+            btnAlterar.Enabled = false;
+            btnCadastrar.Enabled = false;
+            btnExcluir.Enabled = false;
+            btnLimpar.Enabled = false;
+            btnNovo.Enabled = true;
+
+        }
+
+        //metodo de busca de cep 
+        public void buscaCep(string cep)
+        {
+            var viaCEPService = ViaCepService.Default();
+            try
+            {
+                var endereco = viaCEPService.ObterEndereco(cep);
+
+                txtEndereco.Text = endereco.Logradouro;
+                txtBairro.Text = endereco.Bairro;
+                txtCidade.Text = endereco.Localidade;
+                cbbEstado.Text = endereco.UF;
+                txtNumero.Focus();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Favor inserir CEP válido!!!", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                limparCampos();
+            }
 
         }
 
@@ -147,6 +176,7 @@ namespace Cantina
                 MessageBox.Show("Cadastrado com sucesso!.", "Sistema", MessageBoxButtons.OK,
                     MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                 desabilitarCampos();
+                limparCampos();
             }
             
         }
@@ -154,6 +184,15 @@ namespace Cantina
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             limparCampos();
+        }
+
+        private void mkbCEP_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                //busca o cep
+                buscaCep(mkbCEP.Text);
+            }
         }
     }
 }

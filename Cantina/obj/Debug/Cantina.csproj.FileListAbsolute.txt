@@ -36,3 +36,8 @@ C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\obj\Debug\Cantina.c
 C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\obj\Debug\Cantina.csproj.CoreCompileInputs.cache
 C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\obj\Debug\Cantina.exe
 C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\obj\Debug\Cantina.pdb
+C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\bin\Debug\MosaicoSolutions.ViaCep.dll
+C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Laboratorio-info\Source\Repos\CantinaCSharp\Cantina\obj\Debug\Cantina.csproj.CopyComplete

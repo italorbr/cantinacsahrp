@@ -319,7 +319,7 @@ namespace Cantina
             // mkbCEP
             // 
             this.mkbCEP.Location = new System.Drawing.Point(328, 220);
-            this.mkbCEP.Mask = "00000-0000";
+            this.mkbCEP.Mask = "00000-000";
             this.mkbCEP.Name = "mkbCEP";
             this.mkbCEP.Size = new System.Drawing.Size(96, 26);
             this.mkbCEP.TabIndex = 7;
